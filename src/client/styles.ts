@@ -2,7 +2,7 @@ export const CSS = `
 [data-file-peek-layout]{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(140px,min(var(--fp-width,240px),45%));grid-template-rows:auto minmax(0,1fr)}
 [data-file-peek-layout]>[data-file-peek-header]{grid-column:1/-1;grid-row:1;min-width:0}
 [data-file-peek-layout]>[data-file-peek-preview]{grid-column:1;grid-row:2;min-width:0;min-height:0;width:auto!important}
-.fp-host{grid-column:2;grid-row:2;position:relative;min-width:0;min-height:0;overflow:visible;pointer-events:auto;border-left:1px solid var(--dsw-alias-border-l3,#e2e2e2);background:var(--dsw-alias-bg-base,#f7f7f7);color:var(--dsw-alias-label-primary,#252525)}
+.fp-host{grid-column:2;grid-row:2;position:relative;min-width:0;min-height:0;overflow:visible;pointer-events:auto;border-left:.5px solid var(--dsw-alias-border-l3,#e2e2e2);background:var(--dsw-alias-bg-base,#f7f7f7);color:var(--dsw-alias-label-primary,#252525)}
 .fp-host[hidden]{display:none!important}.fp-content{height:100%;min-height:0;overflow:hidden}
 .fp-tree{height:100%;min-height:0;display:flex;flex-direction:column;font-family:inherit;font-size:14px;line-height:1.5;color:inherit}
 .fp-toolbar{box-sizing:border-box;display:flex;align-items:center;gap:2px;height:38px;padding:0 6px;flex:none;min-width:0;border-bottom:.5px solid var(--dsw-alias-border-l3,#e2e2e2)}
@@ -24,6 +24,6 @@ export const CSS = `
 .fp-error{color:var(--dsw-alias-label-secondary,#777);border-bottom:1px solid var(--dsw-alias-border-l3,#ddd)}
 .fp-filter-hint{padding:5px 10px;font-size:inherit;color:var(--dsw-alias-label-tertiary,#888)}
 .fp-retry{border:0;background:transparent;color:var(--dsw-alias-brand-primary,#4d6bfe);cursor:pointer}
-.fp-resize{position:absolute;left:-4px;top:0;bottom:0;width:7px;z-index:3;cursor:col-resize;touch-action:none}
-.fp-resize:hover,.fp-resize:focus-visible{background:var(--dsw-alias-brand-primary,#4d6bfe);opacity:.35;outline:none}
+.fp-resize{position:absolute;left:-4px;top:0;bottom:0;width:8px;z-index:3;cursor:col-resize;touch-action:none;background:transparent}
+.fp-resize:focus-visible{outline:none}
 `

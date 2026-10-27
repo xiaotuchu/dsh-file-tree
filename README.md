@@ -51,9 +51,9 @@ npm run build
 - `src/client/`: 文件树、样式和原生面板接入。
 - `src/node/`: 目录和文本读取接口；请求鉴权、工作区路径检查。
 - `src/shared/`: 前后端协议。
-- `lib/`: 随 npm 包分发的预构建产物。
+- `lib/`: 本地构建生成，随 npm 包分发，不提交到 GitHub。
 
-The browser uses the host's React and UI components; the bundle does not include a second React runtime. Source repositories include prebuilt `lib` files so installation does not require a build step.
+The browser uses the host's React and UI components; the bundle does not include a second React runtime. Install the published npm package for prebuilt bundles. GitHub contains source only; run `npm ci` and `npm run build` for local development. `npm pack` and `npm publish` automatically build the bundles before packaging.
 
 ## 验证 / Verification
 

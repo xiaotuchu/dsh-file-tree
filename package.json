@@ -23,7 +23,8 @@
     "build": "node scripts/build.mjs",
     "typecheck": "tsc --noEmit",
     "test": "node scripts/test.mjs",
-    "prepublishOnly": "node scripts/release-check.mjs"
+    "prepublishOnly": "node scripts/release-check.mjs",
+    "prepack": "node scripts/build.mjs"
   },
   "devDependencies": {
     "@types/node": "^20.14.0",
