@@ -1,0 +1,8 @@
+node_modules/
+artifacts/
+
+*.tgz
+release/
+.env
+.env.*
+.npmrc

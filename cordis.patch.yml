@@ -1,0 +1,6 @@
+# Install with: dsh plugin --profile desktop add dsh-file-tree
+- insert:
+    - id: dsh-file-tree
+      name: 'dsh-file-tree'
+      config:
+        enabled: true

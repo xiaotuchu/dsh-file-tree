@@ -1,0 +1,77 @@
+{
+  "name": "dsh-file-tree",
+  "version": "0.1.0",
+  "description": "Workspace file tree beside the native DeepSeek Harness preview, with filtering, refresh and persistent selection.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/test.mjs",
+    "prepublishOnly": "node scripts/release-check.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/react": "~18.3.1",
+    "@types/react-dom": "~18.3.0",
+    "esbuild": "^0.24.0",
+    "jsdom": "^26.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.6.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar-right"
+      ]
+    },
+    "compatibility": {
+      "dsh": ">=0.2.1-rc.2",
+      "profiles": [
+        "web",
+        "desktop"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "file-tree",
+    "workspace",
+    "preview"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "author": "Xiaotu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaotuchu/dsh-file-tree.git"
+  },
+  "homepage": "https://github.com/xiaotuchu/dsh-file-tree#readme",
+  "bugs": {
+    "url": "https://github.com/xiaotuchu/dsh-file-tree/issues"
+  }
+}
