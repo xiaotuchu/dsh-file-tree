@@ -7,7 +7,7 @@ A workspace file tree beside the native DeepSeek Harness preview panel.
 ## 安装 / Install
 
 ```sh
-dsh plugin --profile desktop add dsh-file-tree
+dsh plugin --profile desktop add @xiaotuchu/dsh-file-tree
 ```
 
 安装或更新后，完全退出并重新打开 DSH。进入会话并打开右侧预览面板，即可看到文件树；标题栏的文件夹按钮用于显示或隐藏它。

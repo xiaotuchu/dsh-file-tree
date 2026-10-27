@@ -1,5 +1,5 @@
 {
-  "name": "dsh-file-tree",
+  "name": "@xiaotuchu/dsh-file-tree",
   "version": "0.1.0",
   "description": "Workspace file tree beside the native DeepSeek Harness preview, with filtering, refresh and persistent selection.",
   "license": "MIT",
