@@ -20,6 +20,18 @@ dsh plugin --profile web add "@xiaotuchu/dsh-file-tree"
 
 安装或更新后，桌面版完全退出并重新打开 DSH；Web 版重启 DSH 服务并刷新页面。进入会话，打开右侧预览面板，即可使用文件树。标题栏的文件夹按钮可显示或隐藏文件树。
 
+## 卸载
+
+**桌面版应用**：在插件管理中找到 File Tree，选择卸载。
+
+**Web 版**：在运行 DSH 的机器上执行：
+
+```sh
+dsh plugin --profile web remove "@xiaotuchu/dsh-file-tree"
+```
+
+卸载后重启 DSH；Web 版同时刷新页面。
+
 ## 功能
 
 - **浏览目录**：展示当前会话的工作区，点击文件夹展开或折叠子目录。
@@ -30,3 +42,7 @@ dsh plugin --profile web add "@xiaotuchu/dsh-file-tree"
 - **调整宽度**：拖动文件树左侧分隔线，自由调整面板宽度。
 - **键盘操作**：支持上下方向键移动、左右方向键展开与折叠，以及 Home / End 跳转。
 - **跟随主题**：字体、配色和工具提示与 DSH 界面保持一致。
+
+## 许可
+
+MIT © 2026 dsh-file-tree contributors — 见 [LICENSE](LICENSE)。
