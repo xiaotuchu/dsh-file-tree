@@ -1,6 +1,6 @@
 {
   "name": "@xiaotuchu/dsh-file-tree",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Workspace file tree beside the native DeepSeek Harness preview, with filtering, refresh and persistent selection.",
   "license": "MIT",
   "type": "module",
